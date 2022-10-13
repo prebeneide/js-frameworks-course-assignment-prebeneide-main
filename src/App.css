@@ -1,0 +1,129 @@
+
+* {
+	box-sizing: border-box;
+  color:rgb(77, 223, 184);
+}
+
+nav {
+	padding: 15px;
+	background: rgb(77, 223, 184);
+}
+
+nav a {
+	color: rgb(230, 244, 244);
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+	margin: 1rem auto;
+	padding: 1rem;
+	border-radius: 6px;
+	max-width: 500px;
+  background-color: rgb(77, 223, 184);
+}
+
+input,
+textarea {
+	font-size: 1rem;
+	margin-top: 10px;
+	width: 100%;
+	padding: 5px;
+}
+
+textarea {
+	height: 200px;
+}
+
+#form-button {
+	font-size: 1rem;
+	margin-top: 10px;
+  background-color: white;
+  color:rgb(77, 223, 184);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 2px;
+  width: 100%;
+}
+
+button {
+	font-size: 1rem;
+	margin-top: 10px;
+  background-color: white;
+  color:rgb(77, 223, 184);
+  border: none;
+  padding: 0.3rem 0.5rem ;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 1rem auto;
+}
+
+form input {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 3px;
+}
+
+form select {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+  color:rgb(77, 223, 184);
+  border: none;
+  padding: 0.3rem;
+}
+
+form textarea {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 3px;
+}
+
+form fieldset {
+  border: none;
+}
+
+form h2,h5,p,label {
+  color: white;
+}
+
+.form-error {
+	background: #fbb;
+	color: darkred;
+	padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+#contact-form .form-error {
+  background: rgb(250, 233, 2);
+	color: rgb(205, 114, 9);
+}
+
+.pokemons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pokemons a {
+	display: block;
+	padding: 2rem;
+	background:rgb(77, 223, 184);
+	margin: 5px;
+	text-decoration: none;
+}
+
+.pokemon-detail {
+  text-align: center;
+}
+
+.pokemon-detail p {
+  color: rgb(77, 223, 184);
+}
