@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# JS Frameworks Course Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is our JS Frameworks Course Assignment.
+Here we could choose between making a React app or Next.js App.
+We should make a page with login functionality and API calls.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+For the login functionality, we should use either a Wordpress installation with the JWT plugin from Module 3 installed, or a Strapi installation. The API should remain a separate project.
 
-### `npm start`
+We could use either a REST or GraphQL API for the API calls.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Our app should have the following paths:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   "/"
+-   "/detail/:param"
+-   "/contact"
+-   "/login"
+-   "/admin"
 
-### `npm test`
+The admin path should not appear in the navigation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We should use reusable components where appropriate and pay attention to how the components are arranged.
 
-### `npm run build`
+### Home
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We should find an API that returns at least:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   an array of items
+-   a single item retrieved by a parameter (id, name, slug, etc)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We should display at least 2 properties from each result.
 
-### `npm run eject`
+Each result should link to the detail page, passing a parameter in the URL.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Detail
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here we should retrieve the parameter from the URL and use it in an API call to fetch one item.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Display at least 3 properties from the item.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Contact
 
-## Learn More
+Here we should create a form with the following inputs and validation:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   First name - required, minimum 3 characters
+-   Last name - required, minimum 4 characters
+-   Email - required, must be in a valid email format
+-   Subject - required, this must be a select box with at least 2 options
+-   Message - required, minimum 10 characters.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Login
 
-### Code Splitting
+Here we should create a form with username/email and password fields. The inputs should have the necessary validation for a login form.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The form should make a login request to either a Wordpress API with the JWT plugin installed or a Strapi API. If the login is successful we should redirect the user to the admin route.
 
-### Analyzing the Bundle Size
+If the login is unsuccessful we should display a message above the form.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Admin
 
-### Making a Progressive Web App
+This page should simply display an "Admin" heading.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [HTML]
+- [CSS]
+- [React.js](https://reactjs.org/)
 
-### Deployment
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Installing
 
-### `npm run build` fails to minify
+1. Clone the repo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone git@github.com:Noroff-FEU-Assignments/js-frameworks-course-assignment-prebeneide.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
+## Contact
+
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+
+[My LinkedIn page](www.linkedin.com/in/prebeneide)
